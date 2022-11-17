@@ -1,0 +1,48 @@
+header h1
+{
+    background-image: url("../IMG/background.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    padding-bottom: 100px;
+    color:red;
+}
+
+header li
+{
+    list-style-type: circle;
+    color: white;
+}
+
+img
+{
+    border-radius: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+
+body ul
+{
+    list-style-type: '';
+}
+
+a:link{
+    color:green;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #ff0000;
+    border-style: double;
+    border-color: #0800ff;
+    border-radius: 2px;
+}
+
+body{
+    background-image: url("../IMG/achtergrond.jpg");
+    background-size: 1400px 1300px;
+    width: 1300px;
+    margin:auto;
+    font-family: Helvetica, sans-serif;
+}
+
