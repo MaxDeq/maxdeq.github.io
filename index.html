@@ -2,30 +2,142 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="">
-    <script type="text/javascript" charset="utf-8"
-            src=""></script>
     <title>Index</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: aliceblue;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            height: 300px;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .card-description {
+            font-size: 16px;
+            color: #666;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .card-link {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: color 0.3s ease;
+        }
+
+        .card-link:hover {
+            color: #0056b3;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s ease;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
 </head>
 <body>
-<strong>Oplijsting van Labo's</strong>
-<p><a href="Labo-3%20(HTML)/index.html">HTML deel 2</a></p>
-<p><a href="Labo-4%20(HTML)/index.html">HTML deel 3</a></p>
-<p><a href="Labo-5%20(CSS1)/index.html">CSS 1</a></p>
-<p><a href="Labo-6%20(CSS2)/index.html">CSS 2</a></p>
-<p><a href="Labo-7%20(CSS3)/index.html">CSS 3</a></p>
-<p><a href="Labo-8%20(CSS4)/index.html">CSS 4</a></p>
-<p><a href="Labo-9%20(CSS5)/index.html">CSS 5</a></p>
-<p><a href="Labo-10%20(CSS6)/index.html">CSS 6</a></p>
-<p><a href="Labo-11%20(CSS7)/index.html">CSS 7</a></p>
-<p><a href="JS_Labo-1/index.html">JavaScript 1</a></p>
-<p><a href="JS_Labo-2/index.html">JavaScript 2</a></p>
-<p><a href="JS_Labo-3/index.html">JavaScript 3</a></p>
-<p><a href="JS_Labo-4/index.html">JavaScript 4</a></p>
-<p><a href="JS_Labo-5/index.html">JavaScript 5</a></p>
-<p><a href="JS_Labo-6/index.html">JavaScript 6</a></p>
-<p><a href="JS_Labo-7/index.html">JavaScript 7</a></p>
-<p><a href="JS_Labo-8/index.html">JavaScript 8</a></p>
-<p><a href="JS_Labo-9/index.html">JavaScript 9</a></p>
+<div class="card">
+    <h2 class="card-title">HTML</h2>
+    <p class="card-description">Verken de basisprincipes van HTML en leer hoe je webpagina's kunt maken.</p>
+    <div class="dropdown">
+        <a href="#" class="card-link">Labo's</a>
+        <div class="dropdown-content">
+            <a href="Labo-3%20(HTML)/index.html">HTML deel 2</a>
+            <a href="Labo-4%20(HTML)/index.html">HTML deel 3</a>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <h2 class="card-title">CSS</h2>
+    <p class="card-description">Ontdek de kracht van CSS en leer hoe je je webpagina's kunt stijlen en vormgeven.</p>
+    <div class="dropdown">
+        <a href="#" class="card-link">Labo's</a>
+        <div class="dropdown-content">
+            <a href="Labo-5%20(CSS1)/index.html">CSS 1</a>
+            <a href="Labo-6%20(CSS2)/index.html">CSS 2</a>
+            <a href="Labo-7%20(CSS3)/index.html">CSS 3</a>
+            <a href="Labo-8%20(CSS4)/index.html">CSS 4</a>
+            <a href="Labo-9%20(CSS5)/index.html">CSS 5</a>
+            <a href="Labo-10%20(CSS6)/index.html">CSS 6</a>
+            <a href="Labo-11%20(CSS7)/index.html">CSS 7</a>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <h2 class="card-title">JavaScript</h2>
+    <p class="card-description">Duik in de wereld van JavaScript en leer hoe je dynamische en interactieve webpagina's kunt bouwen.</p>
+    <div class="dropdown">
+        <a href="#" class="card-link">Labo's</a>
+        <div class="dropdown-content">
+            <a href="JS_Labo-1/index.html">JavaScript 1</a>
+            <a href="JS_Labo-2/index.html">JavaScript 2</a>
+            <a href="JS_Labo-3/index.html">JavaScript 3</a>
+            <a href="JS_Labo-4/index.html">JavaScript 4</a>
+            <a href="JS_Labo-5/index.html">JavaScript 5</a>
+            <a href="JS_Labo-6/index.html">JavaScript 6</a>
+            <a href="JS_Labo-7/index.html">JavaScript 7</a>
+            <a href="JS_Labo-8/index.html">JavaScript 8</a>
+            <a href="JS_Labo-9/index.html">JavaScript 9</a>
+        </div>
+    </div>
+</div>
 </body>
 </html>
